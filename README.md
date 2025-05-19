@@ -9,7 +9,7 @@ python_version: 3.11
 app_file: app.py
 fullWidth: true
 header: default
-short_description: Upload a rock image to identify its mineral composition using a trained model.
+short_description: Upload a rock image to identify it!
 tags:
   - geology
   - mineralogy
