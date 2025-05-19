@@ -6,7 +6,7 @@ import gradio as gr
 
 load_dotenv()
 
-key = os.getenv("KEY")
+key = os.getenv("API_KEY")
 
 pipe = pipeline("image-classification", model="Nech-C/mineralimage5K-98", device='cpu')
 
