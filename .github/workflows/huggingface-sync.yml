@@ -16,5 +16,5 @@ jobs:
           lfs: true
       - name: Push to hub
         env:
-          HF_TOKEN: ${{ secrets.PUSH_TO_HUB }}
+          HF_TOKEN: ${{ secrets.PUSH_TO_HF }}
         run: git push https://Nech-C:$HF_TOKEN@huggingface.co/spaces/Nech-C/Rock-Identifier main
