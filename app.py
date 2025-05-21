@@ -7,8 +7,8 @@ import gradio as gr
 load_dotenv()
 
 key = os.getenv("API_KEY")
-
-pipe = pipeline("image-classification", model="Nech-C/mineralimage5K-98", device='cpu', token=key)
+model_id = os.getenv("MODEL_ID")
+pipe = pipeline("image-classification", model=model_id, device='cpu', token=key)
 
 def classify_image(image):
     # [{'label': 'quartz', 'score': 0.20238091051578522}, {'label': 'celestine', 'score': 0.11984242498874664},
