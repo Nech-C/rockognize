@@ -37,11 +37,8 @@ with gr.Blocks() as demo:
                 gr.Examples(
                     examples=examples,
                     inputs=image_input,
-                    outputs=label_output,
                     label="Try Examples",
                     examples_per_page=3,
-                    cache_examples=False,
-                    fn=classify_image,
                 )
             with gr.Column():
                 label_output = gr.Label(label="Top 5 Predictions")
